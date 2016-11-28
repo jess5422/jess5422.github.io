@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Amazone </title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src=" http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+    <script>
+    $(document).ready(function(){
+      $("[data-toggle=tooltip]").tooltip();
+});
+    </script>
+
+  </head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="cssweb.css">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+  <body>
+
+    <div class = "title">
+      <h1>
+        London Graffitis
+      </h1>
+      <h2>
+        Hunt them and share them
+      </h2>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div>
+        <p class="navbar-text">
+          <ul class="nav navbar-nav">
+            <li class= "onglet"> <a href= "index.html"> Home </a> </li>
+            <li class= "onglet"> <a href= "exhibitions_page.html"> Exhibitions </a> </li>
+            <li class= "onglet"> <a href= "about_page.html"> About </a> </li>
+          </ul>
+        </p>
+
+      </div>
+    </nav>
+
+  <h3>
+  Amazone
+  </h3>
+
+  <div class= col-sm-5>
+    <div class = "big_pic", id = indian> </div>
+  </div>
+
+  <div class = col-sm-7>
+    <p class= 'description'> On a wooden door in Brick Lane, one can find this great portrait of a wild woman. It has
+      been painted by Dan Kitchener. We found it in July, 2015 and one year and a half later, it is still there, even
+      though a bit overpainted by some graffitis.
+      The artist <a href= "http://dankitchener.bigcartel.com/product/tokyo-blue-limited-edition-glicee-print"> is selling </a>
+      a piece of art, "Tokyo Blue", that looks quite the same.
+    </p>
+
+    <p class= 'description'>
+      Under this colorfull portrait, Dan has added around October, 2015, a street scene.
+      You can have an overview of the full door and see Dan at work <a href= "https://londoncallingblog.net/2015/10/12/new-dan-kitchener-street-art-in-brick-lane/"> here </a>.
+    </p>
+
+  </div>
+
+  <script>
+
+  function sendMail() {
+    var link = "mailto:jessica.massonnie@gmail.com"
+             + "?cc="
+             + "&subject=" + escape("NEW COMMENT - Make Tea Not War")
+             + "&body=" + escape(document.getElementById("com").value)
+    ;
+
+    window.location.href = link;
+}
+
+  </script>
+
+  	<div class="status-upload">
+  		<form class = col-sm-12>
+  			<textarea class = col-sm-4 placeholder= "What does it inspire you? Type your text and send it to us, we will add it on the website!" id = com></textarea>
+  			<button type="submit" class="btn btn-success green" onclick = "sendMail(); return false"> Send </button>
+  	  </form>
+  </div>
+
+    <!--
+      <form class = col-sm-12>
+        <div id = "old_com">
+  	    </div>
+      </form>
+    -->
+
+  </body>
+
+</html>

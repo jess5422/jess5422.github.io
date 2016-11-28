@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Dismembered Robot </title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src=" http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+    <script>
+    $(document).ready(function(){
+      $("[data-toggle=tooltip]").tooltip();
+});
+    </script>
+
+  </head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Rasa" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="cssweb.css">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+  <body>
+
+    <div class = "title">
+      <h1>
+        London Graffitis
+      </h1>
+      <h2>
+        Hunt them and share them
+      </h2>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div>
+        <p class="navbar-text">
+          <ul class="nav navbar-nav">
+            <li class= "onglet"> <a href= "index.html"> Home </a> </li>
+            <li class= "onglet"> <a href= "exhibitions_page.html"> Exhibitions </a> </li>
+            <li class= "onglet"> <a href= "about_page.html"> About </a> </li>
+          </ul>
+        </p>
+
+      </div>
+    </nav>
+
+  <h3>
+  Dismembered Robot
+  </h3>
+
+  <div class= col-sm-5>
+    <div class = "big_pic", id = headd> </div>
+  </div>
+
+  <div class = col-sm-7>
+    <p class= 'description'> This fined-grained drawing has been made by Phlegm.
+      As explained on <a href= "http://www.streetartbio.com/phlegm"> this website </a>,
+      the artist's name would refer to one of the four humours
+      in ancient Greek medecine. Phlegm was related to an apathetic and unemotional temperament.
+      In fact, most of Phlegm's pieces of streetart are black and white, but are unlikely to leave
+      you without emotion!
+    </p>
+
+  <p class= 'description'>
+      Plegm is auto-publishing comics, and has created a book "Everything There Ever Was and Will Be".
+      This title echoes <a href= "http://phlegmcomicnews.blogspot.co.uk/2012/11/documenting-everything-there-ever-was.html">
+      one of his painting </a>, sold for the occasion. 
+
+  </p>
+
+  </div>
+
+  <script>
+
+  function sendMail() {
+    var link = "mailto:jessica.massonnie@gmail.com"
+             + "?cc="
+             + "&subject=" + escape("NEW COMMENT - Make Tea Not War")
+             + "&body=" + escape(document.getElementById("com").value)
+    ;
+
+    window.location.href = link;
+}
+
+  </script>
+
+  	<div class="status-upload">
+  		<form class = col-sm-12>
+  			<textarea class = col-sm-4 placeholder= "What does it inspire you? Type your text and send it to us, we will add it on the website!" id = com></textarea>
+  			<button type="submit" class="btn btn-success green" onclick = "sendMail(); return false"> Send </button>
+  	  </form>
+  </div>
+
+    <!--
+      <form class = col-sm-12>
+        <div id = "old_com">
+  	    </div>
+      </form>
+    -->
+
+  </body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Radioactive Flowers </title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src=" http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+    <script>
+    $(document).ready(function(){
+      $("[data-toggle=tooltip]").tooltip();
+});
+    </script>
+
+  </head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Rasa" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="cssweb.css">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+  <body>
+
+    <div class = "title">
+      <h1>
+        London Graffitis
+      </h1>
+      <h2>
+        Hunt them and share them
+      </h2>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div>
+        <p class="navbar-text">
+          <ul class="nav navbar-nav">
+            <li class= "onglet"> <a href= "index.html"> Home </a> </li>
+            <li class= "onglet"> <a href= "exhibitions_page.html"> Exhibitions </a> </li>
+            <li class= "onglet"> <a href= "about_page.html"> About </a> </li>
+          </ul>
+        </p>
+
+      </div>
+    </nav>
+
+  <h3>
+  Radioactive Flowers
+  </h3>
+
+  <div class= col-sm-5>
+    <div class = "big_pic", id = radioflowers> </div>
+  </div>
+
+  <div class = col-sm-7>
+    <p class= 'description'> This painting, "Say it with flowers" is from Otto Schade. Global warming,
+      pollution and concern for the natural environment are expressed in a poetice manner. The dark shape of
+      the tiny girl is made salient by the vivid orange background. Could it represents the sun, some fire, both?
+    </p>
+
+    <p class= 'description'>
+      Otto Schade have created several scenes using this orange and black circle design. Other pieces of his work
+      are characterized by the presence of ribbons. You can find out more on
+      <a href= "http://ottoschade.com"> his website </a> </li>
+      and on his <a href= " https://www.facebook.com/Osch.aka.Otto.Schade/"> Facebook page. </a> </li>
+    </p>
+
+  </div>
+
+  <script>
+
+  function sendMail() {
+    var link = "mailto:jessica.massonnie@gmail.com"
+             + "?cc="
+             + "&subject=" + escape("NEW COMMENT - Make Tea Not War")
+             + "&body=" + escape(document.getElementById("com").value)
+    ;
+
+    window.location.href = link;
+}
+
+  </script>
+
+  	<div class="status-upload">
+  		<form class = col-sm-12>
+  			<textarea class = col-sm-4 placeholder= "What does it inspire you? Type your text and send it to us, we will add it on the website!" id = com></textarea>
+  			<button type="submit" class="btn btn-success green" onclick = "sendMail(); return false"> Send </button>
+  	  </form>
+  </div>
+
+    <!--
+      <form class = col-sm-12>
+        <div id = "old_com">
+  	    </div>
+      </form>
+    -->
+
+  </body>
+
+</html>
